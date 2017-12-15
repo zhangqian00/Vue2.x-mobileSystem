@@ -25,6 +25,7 @@ import './static/vendor/mui/dist/css/mui.css';
 // 配置路由对象
 let router = new VueRouter();
 router.addRoutes([
+	{name: 'default',path: '',redirect: {name: 'home'}}, // 默认
 	{name: 'home',path: '/home',component: Home}, // 首页
 ]);
 
