@@ -2,13 +2,12 @@
   "name": "vue2.0-mobileSystem",
   "version": "1.0.0",
   "description": "",
-  "author": "zhangqian00 <zq_674360351@163.com>",
+  "author": "",
   "main": "index.js",
   "scripts": {
     "dev": ".\\node_modules\\.bin\\webpack-dev-server --inline --hot --open"
   },
   "keywords": [],
-  "author": "",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer-loader": "^3.2.0",
@@ -31,6 +30,7 @@
   "dependencies": {
     "axios": "^0.17.1",
     "mint-ui": "^2.2.13",
+    "mockjs": "^1.0.1-beta3",
     "mui": "0.0.1",
     "vue": "^2.5.10",
     "vue-router": "^3.0.1"
