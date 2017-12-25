@@ -1,13 +1,14 @@
 # 基于Vue2.0的移动端项目
 
-> 基于Vue.js2.0的移动端商城类APP
+> 基于Vue.js2.0的移动端APP
 
 ### 技术栈
 - Vue2.0
-- Vue-Router  
-- Mint-Ui
-- Mui
-- Axios
+- Vue-Router  路由
+- Mint-Ui  基于vue的前端ui框架
+- Mui  前端ui框架
+- Axios  第三方数据请求插件
+- Mockjs  生成随机数据，拦截 Ajax 请求
 
 ### 使用方法
 - 将项目clone或download至本地，执行下面命令
