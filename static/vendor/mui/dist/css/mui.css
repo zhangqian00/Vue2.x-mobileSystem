@@ -5481,6 +5481,19 @@ body > .mui-progressbar
     content: '\e588';
 }
 
+/*加入自己的字体样式*/
+@font-face {
+    font-family: Muiicons;
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('../fonts/iconfont.ttf') format('truetype');
+}
+
+.icon-gouwuchekong:before { content: "\e507"; }
+
+
+
 .mui-fullscreen
 {
     position: absolute;
