@@ -22,6 +22,10 @@ Vue.prototype.$ajax = Axios; // 可以使用this.$ajax
 // 引入自己的全局组件
 import App from './components/app.vue';
 import Home from './components/home/home.vue';
+import Information from './components/information/information.vue';
+import Shopcar from './components/shopcar/shopcar.vue';
+import Setting from './components/setting/setting.vue';
+import NewsList from './components/news/newsList.vue';
 
 
 
@@ -30,6 +34,10 @@ let router = new VueRouter();
 router.addRoutes([
 	{name: 'default',path: '',redirect: {name: 'home'}}, // 默认
 	{name: 'home',path: '/home',component: Home}, // 首页
+	{name: 'information',path: '/information',component: Information}, // 消息
+	{name: 'shopcar',path: '/shopcar',component: Shopcar}, // 购物车
+	{name: 'setting',path: '/setting',component: Setting}, // 设置
+	{name: 'newsList',path: '/news/list',component: NewsList}, // 新闻列表
 ]);
 
 // 引入mock
