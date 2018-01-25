@@ -1,14 +1,14 @@
 <template>
     <div class="tmpl">
         <ul class="mui-table-view">
-            <li class="mui-table-view-cell mui-media">
+            <li class="mui-table-view-cell mui-media" v-for="(item,index) in newsList" :key="index">
                 <a>
-                    <img class="mui-media-object mui-pull-left" src="">
+                    <img class="mui-media-object mui-pull-left" :src="item.src">
                     <div class="mui-media-body">
-                        <span>新闻标题</span>
+                        <span>{{item.title}}</span>
                         <div class="news-desc">
-                            <p>点击数:1</p>
-                            <p>发表时间:2014-01-01</p>
+                            <p>点击数:{{item.clickNum}}</p>
+                            <p>发表时间:{{item.date}}</p>
                         </div>
                     </div>
                 </a>
@@ -25,7 +25,10 @@ export default{
 		}
 	},
 	created() {
-		
+		this.$ajax.get('/newslist').then((res)=>{
+            console.log(res.data);
+            this.newsList = res.data.newsList;
+        });
 	}
 }
 </script>
