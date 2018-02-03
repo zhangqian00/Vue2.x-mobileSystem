@@ -26,7 +26,7 @@ import Information from './components/information/information.vue';
 import Shopcar from './components/shopcar/shopcar.vue';
 import Setting from './components/setting/setting.vue';
 import NewsList from './components/news/newsList.vue';
-
+import NewsDetail from './components/news/newsDetail.vue';
 
 
 // 配置路由对象
@@ -38,6 +38,7 @@ router.addRoutes([
 	{name: 'shopcar',path: '/shopcar',component: Shopcar}, // 购物车
 	{name: 'setting',path: '/setting',component: Setting}, // 设置
 	{name: 'newsList',path: '/news/list',component: NewsList}, // 新闻列表
+	{name: 'newsDetail',path: '/news/detail/:newsId',component: NewsDetail}, // 新闻详情
 ]);
 
 // 引入mock
