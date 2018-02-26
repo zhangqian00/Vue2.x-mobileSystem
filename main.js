@@ -27,7 +27,7 @@ import Shopcar from './components/shopcar/shopcar.vue';
 import Setting from './components/setting/setting.vue';
 import NewsList from './components/news/newsList.vue';
 import NewsDetail from './components/news/newsDetail.vue';
-
+import PhotoShare from './components/photoShare/photoShare.vue';
 
 // 配置路由对象
 let router = new VueRouter();
@@ -39,6 +39,7 @@ router.addRoutes([
 	{name: 'setting',path: '/setting',component: Setting}, // 设置
 	{name: 'newsList',path: '/news/list',component: NewsList}, // 新闻列表
 	{name: 'newsDetail',path: '/news/detail/:newsId',component: NewsDetail}, // 新闻详情
+	{name: 'photoShare',path: '/photoShare',component: PhotoShare}, // 图片分享
 ]);
 
 // 引入mock

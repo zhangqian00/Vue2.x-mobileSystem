@@ -37,6 +37,24 @@ let newsDetailJson = {
 	content: Mock.Random.cparagraph(10,20),
 };
 
+// 图文分享
+let photoShare = [{
+	category: '全部',
+	src: '',
+	title: '',
+	detail: ''
+},{
+	category: '家居生活',
+	src: '',
+	title: '',
+	detail: ''
+},{
+	category: '摄影设计',
+	src: '',
+	title: '',
+	detail: ''
+}];
+
 export default [
 	Mock.mock('/lunbo',lunboData), // 轮播图数据
 	Mock.mock('/newslist',newsListJson), // 新闻列表数据
