@@ -26,7 +26,6 @@ export default{
 	},
 	created() {
 		this.$ajax.get('/newslist').then((res)=>{
-            console.log(res.data);
             this.newsList = res.data;
         });
 	}
