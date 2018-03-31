@@ -3,11 +3,11 @@
 > 基于Vue.js2.0的移动端APP
 
 ### 首页
-![](https://github.com/zhangqian00/Vue2.x-mobileSystem/tree/master/static/imgs/folder/01.png)
+![image](https://github.com/zhangqian00/Vue2.x-mobileSystem/tree/master/static/imgs/folder/01.png)
 ### 新闻列表
-![](https://github.com/zhangqian00/Vue2.x-mobileSystem/tree/master/static/imgs/folder/02.png)
+![image](https://github.com/zhangqian00/Vue2.x-mobileSystem/tree/master/static/imgs/folder/02.png)
 ### 商品列表
-![](https://github.com/zhangqian00/Vue2.x-mobileSystem/tree/master/static/imgs/folder/03.png)
+![image](https://github.com/zhangqian00/Vue2.x-mobileSystem/tree/master/static/imgs/folder/03.png)
 
 ### 技术栈
 - Vue2.0
