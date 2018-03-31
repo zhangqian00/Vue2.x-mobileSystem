@@ -1,6 +1,6 @@
 // 引入vue
 import Vue from 'vue';
-// 引入vue-router
+// 引入vue-router路由插件
 import VueRouter from 'vue-router';
 Vue.use(VueRouter); // 安装插件
 
@@ -65,7 +65,7 @@ router.addRoutes([
 	{name: 'goodsList',path: '/goodsList',component: GoodsList}, // 商品展示
 ]);
 
-// 引入mock
+// 引入配置好的mockjs
 import './util/mock.js';
 
 // 加入到vue实例中

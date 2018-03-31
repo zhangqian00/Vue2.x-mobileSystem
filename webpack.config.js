@@ -28,7 +28,7 @@ module.exports = {
                 //排除路径
                 exclude: /node_modules/,
                 //更为推荐的方式是在.bablerc文件中配置以下设置
-                options: {
+                options: { // 将es6代码转换成浏览器都支持的es5代码
                     presets: ['es2015'],
                     plugins: ['transform-runtime']
                 }

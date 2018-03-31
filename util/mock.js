@@ -1,4 +1,5 @@
 import Mock from 'mockjs';
+// mockjs会拦截对应的请求地址，返回你配置的数据
 
 // 首页轮播图数据
 let lunboJson = [{

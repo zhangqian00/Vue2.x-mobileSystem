@@ -23,7 +23,6 @@
 			//let id = this.$route.params.newsId; // 获取newsId参数,此处并没有用到，写一下获取参数的方式
 			// 发送请求
 			this.$ajax.get('/newsDetail').then((res)=>{
-				console.log(res)
 				this.newsInfo = res.data;
 			});
 		}
@@ -31,6 +30,7 @@
 </script>
 
 <style scoped>
+	/*scoped作用是css只作用于当前组件，不会影响其他组件样式*/
 	.news-title p {
 		padding-left: 5px;
 		font-size: 20px;

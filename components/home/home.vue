@@ -14,6 +14,7 @@
         <div>
         	<ul class="mui-table-view mui-grid-view mui-grid-9">
 	            <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+	            	<!-- vue-router跳转 -->
 	            	<router-link :to="{name:'newsList'}">
 	                    <span class="mui-icon mui-icon-home"></span>
 	                    <div class="mui-media-body">新闻资讯</div>
@@ -61,16 +62,16 @@
 				bannerData: [], // 轮播图数据
 			}
 		},
-		created(){
+		created(){ // 组件初始化时期请求数据
 			this.$ajax.get('/lunbo').then((res)=>{
-				console.log(res.data)
-				this.bannerData = res.data.bannerSrc;
+				this.bannerData = res.data.bannerSrc; // 拿到数据
 			});
 		}
 	}
 </script>
 
 <style scoped>
+	/*scoped作用是css只作用于当前组件，不会影响其他组件样式*/
 	.swipe {
 		height: 190px;
 	}

@@ -30,17 +30,18 @@
 		data(){
 			return {
 				category: [], // 分类
-				imgs: [],
+				imgs: [], // 每个类别的数据
 			}
 		},
 		created(){
 			this.$ajax.get('/photoShare').then((res)=>{
 				this.category = res.data;
-				this.imgs = this.category[0].items;
+				this.imgs = this.category[0].items; // 默认渲染第一类别的数据
 			});
 		},
 		methods: {
-			categoryChange(i){
+			categoryChange(i){ // 点击类别事件
+				// 根据点击类别的索引，渲染对应的数据
 				this.imgs = this.category[i].items;
 			}
 		}
@@ -48,6 +49,7 @@
 </script>
 
 <style scoped>
+	/*scoped作用是css只作用于当前组件，不会影响其他组件样式*/
 	.photo-header li {
 	    list-style: none;
 	    display: inline-block;

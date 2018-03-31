@@ -26,13 +26,14 @@ export default{
 	},
 	created() {
 		this.$ajax.get('/newslist').then((res)=>{
-            this.newsList = res.data;
+            this.newsList = res.data; // 拿到数据
         });
 	}
 }
 </script>
 
 <style scoped>
+/*scoped作用是css只作用于当前组件，不会影响其他组件样式*/
 .mui-media-body p {
     color: #0bb0f5;
 }

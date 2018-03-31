@@ -307,6 +307,7 @@
 <script>
 </script>
 <style scoped>
+/*scoped作用是css只作用于当前组件，不会影响其他组件样式*/
 .mui-table-view.mui-grid-view .mui-table-view-cell > a:not(.mui-btn) {
     margin: 0px;
     padding: 0px;
