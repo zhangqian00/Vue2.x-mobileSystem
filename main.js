@@ -49,6 +49,7 @@ import Setting from './components/setting/setting.vue';
 import NewsList from './components/news/newsList.vue';
 import NewsDetail from './components/news/newsDetail.vue';
 import PhotoShare from './components/photoShare/photoShare.vue';
+import GoodsList from './components/goods/goodsList.vue';
 
 // 配置路由对象
 let router = new VueRouter();
@@ -61,6 +62,7 @@ router.addRoutes([
 	{name: 'newsList',path: '/news/list',component: NewsList}, // 新闻列表
 	{name: 'newsDetail',path: '/news/detail/:newsId',component: NewsDetail}, // 新闻详情
 	{name: 'photoShare',path: '/photoShare',component: PhotoShare}, // 图片分享
+	{name: 'goodsList',path: '/goodsList',component: GoodsList}, // 商品展示
 ]);
 
 // 引入mock

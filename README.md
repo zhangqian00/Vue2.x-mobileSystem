@@ -14,6 +14,7 @@
 - 将项目clone或download至本地，执行下面命令
 	+ npm install  // 下载相关依赖包
 	+ npm run dev  // 开启服务器，即可看到效果页面
+
 ## Build Setup
 
 ``` bash
