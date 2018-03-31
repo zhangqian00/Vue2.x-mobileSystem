@@ -2,6 +2,13 @@
 
 > 基于Vue.js2.0的移动端APP
 
+### 首页
+![image index](https://github.com/zhangqian00/Vue2.x-mobileSystem/tree/master/static/imgs/folder/01.png)
+### 新闻列表
+![image news](https://github.com/zhangqian00/Vue2.x-mobileSystem/tree/master/static/imgs/folder/02.png)
+### 商品列表
+![image goods](https://github.com/zhangqian00/Vue2.x-mobileSystem/tree/master/static/imgs/folder/03.png)
+
 ### 技术栈
 - Vue2.0
 - Vue-Router  路由
