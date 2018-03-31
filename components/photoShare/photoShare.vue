@@ -3,26 +3,20 @@
         <!-- 引入返回导航 -->
         <div class="photo-header">
             <ul>
-                <li>
-                    <a href="javascript:;">标题1</a>
-                </li>
-                <li>
-                    <a href="javascript:;">标题2</a>
-                </li>
-                <li>
-                    <a href="javascript:;">标题3</a>
+                <li v-for="(item,index) in category" @click="categoryChange(index)">
+                    <a href="javascript:;">{{item.category}}</a>
                 </li>
             </ul>
         </div>
         <div class="photo-list">
             <ul>
-                <li>
+                <li v-for="item in imgs">
                     <a>
-                        <img src="../../static/imgs/banner/02.jpg">
+                        <img :src="item.src">
                         <p>
-                            <span>图片标题</span>
+                            <span>{{item.title}}</span>
                             <br>
-                            <span>图片摘要</span>
+                            <span>{{item.detail}}</span>
                         </p>
                     </a>
                 </li>
@@ -36,6 +30,18 @@
 		data(){
 			return {
 				category: [], // 分类
+				imgs: [],
+			}
+		},
+		created(){
+			this.$ajax.get('/photoShare').then((res)=>{
+				this.category = res.data;
+				this.imgs = this.category[0].items;
+			});
+		},
+		methods: {
+			categoryChange(i){
+				this.imgs = this.category[i].items;
 			}
 		}
 	}
@@ -74,6 +80,7 @@
 	.photo-list ul {
 	    padding-left: 0;
 	    margin: 0;
+	    padding-bottom: 60px;
 	}
 
 	.photo-list p {

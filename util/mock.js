@@ -40,23 +40,99 @@ let newsDetailJson = {
 // 图文分享
 let photoShare = [{
 	category: '全部',
-	src: '',
-	title: '',
-	detail: ''
+	items: [{
+		src:'/static/imgs/banner/01.jpg',
+		title: Mock.Random.cparagraph(1),
+		detail: Mock.Random.cparagraph(3)
+	},{
+		src:'/static/imgs/banner/02.jpg',
+		title: Mock.Random.cparagraph(1),
+		detail: Mock.Random.cparagraph(3)
+	},{
+		src:'/static/imgs/banner/03.jpg',
+		title: Mock.Random.cparagraph(1),
+		detail: Mock.Random.cparagraph(3)
+	}]
 },{
 	category: '家居生活',
-	src: '',
-	title: '',
-	detail: ''
+	items: [{
+		src:'/static/imgs/banner/02.jpg',
+		title: Mock.Random.cparagraph(1),
+		detail: Mock.Random.cparagraph(3)
+	},{
+		src:'/static/imgs/banner/01.jpg',
+		title: Mock.Random.cparagraph(1),
+		detail: Mock.Random.cparagraph(3)
+	},{
+		src:'/static/imgs/banner/03.jpg',
+		title: Mock.Random.cparagraph(1),
+		detail: Mock.Random.cparagraph(3)
+	}]
 },{
 	category: '摄影设计',
-	src: '',
-	title: '',
-	detail: ''
+	items: [{
+		src:'/static/imgs/banner/03.jpg',
+		title: Mock.Random.cparagraph(1),
+		detail: Mock.Random.cparagraph(3)
+	},{
+		src:'/static/imgs/banner/02.jpg',
+		title: Mock.Random.cparagraph(1),
+		detail: Mock.Random.cparagraph(3)
+	},{
+		src:'/static/imgs/banner/01.jpg',
+		title: Mock.Random.cparagraph(1),
+		detail: Mock.Random.cparagraph(3)
+	}]
+},{
+	category: '明星美女',
+	items: [{
+		src:'/static/imgs/banner/02.jpg',
+		title: Mock.Random.cparagraph(1),
+		detail: Mock.Random.cparagraph(3)
+	},{
+		src:'/static/imgs/banner/03.jpg',
+		title: Mock.Random.cparagraph(1),
+		detail: Mock.Random.cparagraph(3)
+	},{
+		src:'/static/imgs/banner/01.jpg',
+		title: Mock.Random.cparagraph(1),
+		detail: Mock.Random.cparagraph(3)
+	}]
+},{
+	category: '空间设计',
+	items: [{
+		src:'/static/imgs/banner/01.jpg',
+		title: Mock.Random.cparagraph(1),
+		detail: Mock.Random.cparagraph(3)
+	},{
+		src:'/static/imgs/banner/03.jpg',
+		title: Mock.Random.cparagraph(1),
+		detail: Mock.Random.cparagraph(3)
+	},{
+		src:'/static/imgs/banner/02.jpg',
+		title: Mock.Random.cparagraph(1),
+		detail: Mock.Random.cparagraph(3)
+	}]
+},{
+	category: '美食分享',
+	items: [{
+		src:'/static/imgs/banner/02.jpg',
+		title: Mock.Random.cparagraph(1),
+		detail: Mock.Random.cparagraph(3)
+	},{
+		src:'/static/imgs/banner/01.jpg',
+		title: Mock.Random.cparagraph(1),
+		detail: Mock.Random.cparagraph(3)
+	},{
+		src:'/static/imgs/banner/03.jpg',
+		title: Mock.Random.cparagraph(1),
+		detail: Mock.Random.cparagraph(3)
+	}]
 }];
 
 export default [
 	Mock.mock('/lunbo',lunboData), // 轮播图数据
 	Mock.mock('/newslist',newsListJson), // 新闻列表数据
 	Mock.mock('/newsDetail',newsDetailJson), // 新闻详情数据
+	Mock.mock('/photoShare',photoShare), // 图文分享
 ];
